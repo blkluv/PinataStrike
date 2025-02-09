@@ -1,0 +1,39 @@
+
+body { font-family: Arial, sans-serif; 
+    text-align: center; 
+    background-color: #EEF2FF;}
+
+#posts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns posts to the left */
+    padding-left: 20px; /* Adds space from the left edge */
+}
+
+.post {
+    background-color: #D1D5EE;
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0; /* Adds space between posts */
+    max-width: 1800px; /* Ensures posts don't stretch too wide */
+    width: fit-content; /* Makes the border scale with text length */
+    text-align: left;
+    border-radius: 8px;
+}
+
+.post img {
+    max-width: 400px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.post .text {
+    flex-grow: 1;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
